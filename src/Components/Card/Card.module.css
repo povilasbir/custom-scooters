@@ -1,0 +1,19 @@
+.card {
+  margin: 30px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border: solid 4px hsl(60, 100%, 48%);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 0px hsla(180, 100%, 48%, 0.5);
+  color: hsl(0, 0%, 80%);
+  transition: 0.5s;
+}
+
+.card:hover {
+  background-color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 20%);
+  box-shadow: 20px 20px 40px 0px hsl(180, 100%, 48%);
+}/*# sourceMappingURL=Card.module.css.map */

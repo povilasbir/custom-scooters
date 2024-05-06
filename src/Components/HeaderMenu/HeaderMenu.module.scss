@@ -1,0 +1,27 @@
+@import '../../Utils/style_variables.scss';
+
+.headerMenu {
+    position: sticky;
+    top: 0px;
+
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        // gap: 100px;
+        background-color: $adjusted-yellow;
+        list-style-type: none;
+
+        a {
+            padding-left: 100px;
+            padding-right: 100px;
+            text-decoration: none;
+            color: $adjusted-black;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background-color: $adjusted-cyan;
+        }
+    }
+}

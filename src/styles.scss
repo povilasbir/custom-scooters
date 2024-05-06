@@ -1,0 +1,17 @@
+@import './Utils/style_variables.scss';
+
+html {
+
+    body {
+        font-family: "Rubik", sans-serif;
+        background: linear-gradient(180deg, $background-start 0%, $background-mid 50%, $background-end 100%);
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
