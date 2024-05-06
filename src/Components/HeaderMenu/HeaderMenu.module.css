@@ -1,0 +1,21 @@
+.headerMenu {
+  position: sticky;
+  top: 0px;
+}
+.headerMenu ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(60, 100%, 48%);
+  list-style-type: none;
+}
+.headerMenu ul a {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-decoration: none;
+  color: hsl(0, 0%, 20%);
+  transition: 0.3s;
+}
+.headerMenu ul a:hover {
+  background-color: hsl(180, 100%, 48%);
+}/*# sourceMappingURL=HeaderMenu.module.css.map */
