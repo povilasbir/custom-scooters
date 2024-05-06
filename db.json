@@ -1,0 +1,18 @@
+{
+    "orders": [
+        {
+            "id": "0",
+            "name": "X1000",
+            "frameId": "1",
+            "batteryId": "1",
+            "front": {
+                "controllerId": "1",
+                "motorId": "1"
+            },
+            "back": {
+                "controllerId": "1",
+                "motorId": "1"
+            }
+        }
+    ]
+}
