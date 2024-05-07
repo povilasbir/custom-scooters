@@ -1,7 +1,7 @@
 {
     "orders": [
         {
-            "id": "0",
+            "id": "1",
             "name": "X1000",
             "frameId": "1",
             "batteryId": "1",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "id": "1",
+            "id": "2",
             "name": "X2000",
             "frameId": "2",
             "batteryId": "2",
@@ -31,84 +31,76 @@
     ],
     "frames": [
         {
-            "id": "0",
+            "id": "1",
             "name": "F1000",
             "weight": "10",
-            "price": "200",
-            "img": "https://endless-sphere.com/sphere/proxy.php?image=https%3A%2F%2Fi.ibb.co%2FvYcdtDT%2FMain-Assembly-8.png&hash=dda7c89af0754b0e616183843884a6e6"
+            "img": "https://www.my-escooter.com/wp-content/uploads/2023/03/e-scooter-e5-gris_face_blanc.jpg"
         },
         {
-            "id": "1",
+            "id": "2",
             "name": "F2000",
             "weight": "15",
-            "price": "300",
             "img": "https://minimotorsnordic.com/wp-content/uploads/2020/12/DUALTRON3.jpeg"
         }
     ],
     "batteries": [
         {
-            "id": "0",
+            "id": "1",
             "name": "B1000",
             "typeId": "0",
             "voltage": "24",
             "capacity": "1000",
-            "weight": "20",
-            "price": "50"
+            "weight": "20"
         },
         {
-            "id": "1",
+            "id": "2",
             "name": "B2000",
             "typeId": "1",
             "voltage": "60",
             "capacity": "3000",
-            "weight": "5",
-            "price": "65"
+            "weight": "5"
         }
     ],
     "types": [
         {
-            "id": "0",
+            "id": "1",
             "name": "Lithium"
         },
         {
-            "id": "1",
+            "id": "2",
             "name": "Lead acid"
         }
     ],
     "controllers": [
         {
-            "id": "0",
+            "id": "1",
             "name": "C1000",
             "voltage": "24",
             "power": "350",
-            "weight": "0.5",
-            "price": "50"
+            "weight": "0.5"
         },
         {
-            "id": "1",
+            "id": "2",
             "name": "C2000",
             "voltage": "60",
             "power": "500",
-            "weight": "1",
-            "price": "90"
+            "weight": "1"
         }
     ],
     "motors": [
         {
-            "id": "0",
+            "id": "1",
             "name": "M1000",
             "maxVoltage": "60",
             "power": "350",
-            "weight": "2",
-            "price": "150"
+            "weight": "2"
         },
         {
-            "id": "1",
+            "id": "2",
             "name": "M2000",
             "maxVoltage": "60",
             "power": "500",
-            "weight": "3",
-            "price": "250"
+            "weight": "3"
         }
     ]
 }

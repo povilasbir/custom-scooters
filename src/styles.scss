@@ -5,6 +5,7 @@ html {
     body {
         font-family: "Rubik", sans-serif;
         background: linear-gradient(180deg, $background-start 0%, $background-mid 50%, $background-end 100%);
+        min-height: 1080px;
 
         main {
             display: flex;
@@ -12,6 +13,20 @@ html {
             align-items: center;
             max-width: 80%;
             margin: 0 auto;
+
+            .basic-button {
+                text-decoration: none;
+                color: $transparent-cyan;
+                border: 2px solid $transparent-cyan;
+                padding: 10px 10px 10px 10px;
+                border-radius: 20px;
+                transition: 0.2s;
+            }
+
+            .basic-button:hover {
+                color: $adjusted-cyan;
+                border-color: $adjusted-cyan;
+            }
         }
     }
 }
