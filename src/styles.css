@@ -1,6 +1,7 @@
 html body {
   font-family: "Rubik", sans-serif;
   background: linear-gradient(180deg, hsl(0, 0%, 10%) 0%, hsl(0, 0%, 20%) 50%, hsl(0, 0%, 20%) 100%);
+  min-height: 1080px;
 }
 html body main {
   display: flex;
@@ -8,4 +9,16 @@ html body main {
   align-items: center;
   max-width: 80%;
   margin: 0 auto;
+}
+html body main .basic-button {
+  text-decoration: none;
+  color: hsla(180, 100%, 48%, 0.5);
+  border: 2px solid hsla(180, 100%, 48%, 0.5);
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+html body main .basic-button:hover {
+  color: hsl(180, 100%, 48%);
+  border-color: hsl(180, 100%, 48%);
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,26 @@
+@import '../../Utils/style_variables.scss';
+
+.itemWrap {
+    color: $adjusted-black;
+    background-color: hsl(180, 100%, 30%);
+    text-decoration: none;
+    border: 3px solid $adjusted-yellow;
+    border-radius: 7px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    font-style: italic;
+    transition: 0.2s;
+
+    img {
+        width: 100px;
+        border: 2px solid $transparent-cyan;
+        border-radius: 3px;
+    }
+}
+
+.itemWrap:hover {
+    color: $adjusted-black;
+    background-color: $adjusted-cyan;
+}
