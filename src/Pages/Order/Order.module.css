@@ -1,0 +1,8 @@
+.orderCard {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.orderCard img {
+  width: 400px;
+}/*# sourceMappingURL=Order.module.css.map */
