@@ -16,6 +16,7 @@ html {
 
             .basic-button {
                 text-decoration: none;
+                text-align: center;
                 background-color: rgba(0, 0, 0, 0);
                 color: $transparent-cyan;
                 border: 2px solid $transparent-cyan;
@@ -31,6 +32,7 @@ html {
 
             .negative-button {
                 text-decoration: none;
+                text-align: center;
                 background-color: rgba(0, 0, 0, 0);
                 color: $inactive-red;
                 border: 2px solid $inactive-red;

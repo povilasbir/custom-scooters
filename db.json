@@ -1,7 +1,6 @@
 {
   "orders": [
     {
-      "id": "1",
       "name": "X1000",
       "frameId": "1",
       "batteryId": "1",
@@ -12,7 +11,8 @@
       "back": {
         "controllerId": "1",
         "motorId": "1"
-      }
+      },
+      "id": "1"
     },
     {
       "id": "2",
@@ -31,22 +31,16 @@
   ],
   "frames": [
     {
+      "id": "1",
       "name": "F1000",
       "weight": "10",
-      "img": "https://www.my-escooter.com/wp-content/uploads/2023/03/e-scooter-e5-gris_face_blanc.jpg",
-      "id": "1"
+      "img": "https://www.my-escooter.com/wp-content/uploads/2023/03/e-scooter-e5-gris_face_blanc.jpg"
     },
     {
       "id": "2",
       "name": "F2000",
       "weight": "15",
       "img": "https://minimotorsnordic.com/wp-content/uploads/2020/12/DUALTRON3.jpeg"
-    },
-    {
-      "id": "0e09",
-      "name": "F3000",
-      "weight": "20",
-      "img": "no image"
     }
   ],
   "batteries": [

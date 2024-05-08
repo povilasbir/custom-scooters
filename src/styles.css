@@ -12,6 +12,7 @@ html body main {
 }
 html body main .basic-button {
   text-decoration: none;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0);
   color: hsla(180, 100%, 48%, 0.5);
   border: 2px solid hsla(180, 100%, 48%, 0.5);
@@ -25,9 +26,10 @@ html body main .basic-button:hover {
 }
 html body main .negative-button {
   text-decoration: none;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0);
-  color: hsl(0, 100%, 40%);
-  border: 2px solid hsl(0, 100%, 40%);
+  color: hsl(0, 100%, 30%);
+  border: 2px solid hsl(0, 100%, 30%);
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
   transition: 0.2s;

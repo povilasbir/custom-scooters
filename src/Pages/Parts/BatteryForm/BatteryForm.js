@@ -59,8 +59,6 @@ function BatteryForm() {
             weight: weight
         }
 
-        // console.log(newBattery)
-
         if (id) {
             putData('/batteries/' + id, newBattery)
         } else {
