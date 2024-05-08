@@ -16,6 +16,7 @@ html {
 
             .basic-button {
                 text-decoration: none;
+                background-color: rgba(0, 0, 0, 0);
                 color: $transparent-cyan;
                 border: 2px solid $transparent-cyan;
                 padding: 10px 10px 10px 10px;
@@ -26,6 +27,21 @@ html {
             .basic-button:hover {
                 color: $adjusted-cyan;
                 border-color: $adjusted-cyan;
+            }
+
+            .negative-button {
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0);
+                color: $inactive-red;
+                border: 2px solid $inactive-red;
+                padding: 10px 10px 10px 10px;
+                border-radius: 20px;
+                transition: 0.2s;
+            }
+
+            .negative-button:hover {
+                color: $active-red;
+                border-color: $active-red;
             }
         }
     }

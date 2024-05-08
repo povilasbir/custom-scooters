@@ -1,12 +1,13 @@
 .partsListsWrap {
     display: flex;
-    width: 90%;
+    justify-content: center;
+    width: 100%;
     gap: 20px;
 
     div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 25%;
+        // width: 100%;
     }
 }

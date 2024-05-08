@@ -11,13 +11,13 @@ function PartsList({ list, partName }) {
             {list.length > 0 ? (list.map(item => {
                 switch (partName) {
                     case 'frame':
-                        return <FrameItem item={item} />
+                        return <FrameItem key={item.id} item={item} />
                     case 'battery':
-                        return <BatteryItem item={item} />
+                        return <BatteryItem key={item.id} item={item} />
                     case 'controller':
-                        return <ControllerItem item={item} />
+                        return <ControllerItem key={item.id} item={item} />
                     case 'motor':
-                        return <MotorItem item={item} />
+                        return <MotorItem key={item.id} item={item} />
                 }
             })) : 'Loading parts...'}
         </Card>
