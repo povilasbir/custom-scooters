@@ -34,7 +34,7 @@ function Main() {
                     </p>
                 </div>
             </Card>
-            <Card link='/orders'>
+            <Card>
                 <div>
                     <h2>We are currently working on {orders.length} projects.</h2>
                     <p>
@@ -43,7 +43,7 @@ function Main() {
                 </div>
                 <img className={styles.paragraphImage} src={paragraph_image_2} alt='Scooter Image' />
             </Card>
-            <Card link='/parts'>
+            <Card>
                 <img className={styles.paragraphImage} src={paragraph_image_3} alt='Scooter Image' />
                 <div>
                     <h2>Highest quality parts.</h2>

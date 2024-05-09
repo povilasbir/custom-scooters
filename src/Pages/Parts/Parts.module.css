@@ -1,6 +1,6 @@
 .partsListsWrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   gap: 20px;
 }

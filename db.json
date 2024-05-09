@@ -15,7 +15,6 @@
       "id": "1"
     },
     {
-      "id": "2",
       "name": "X2000",
       "frameId": "2",
       "batteryId": "2",
@@ -26,7 +25,8 @@
       "back": {
         "controllerId": "2",
         "motorId": "2"
-      }
+      },
+      "id": "2"
     }
   ],
   "frames": [

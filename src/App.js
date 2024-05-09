@@ -13,6 +13,7 @@ import FrameForm from './Pages/Parts/FrameForm/FrameForm';
 import ControllerForm from './Pages/Parts/ControllerForm/ControllerForm';
 import BatteryForm from './Pages/Parts/BatteryForm/BatteryForm';
 import MotorForm from './Pages/Parts/MotorForm/MotorForm';
+import Contacts from './Pages/Contacts/Contacts';
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
         <Route path='/parts/batteryForm/:id' element={<BatteryForm />} />
         <Route path='/parts/controllerForm/:id' element={<ControllerForm />} />
         <Route path='/parts/motorForm/:id' element={<MotorForm />} />
+
+        <Route path='/contacts' element={<Contacts />} />
       </Routes>
     </>
   );

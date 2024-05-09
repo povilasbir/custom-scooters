@@ -34,20 +34,24 @@ function Parts() {
             <img src={banner} alt='Banner Image'></img>
             <div className={styles.partsListsWrap}>
                 <div>
-                    <Link className='basic-button' to='/parts/frameForm'>Add Part</Link>
+                    <span className='red-note'>Frames</span>
                     <PartsList list={frames} partName={'frame'} />
+                    <Link className='basic-button' to='/parts/frameForm'>Add Part</Link>
                 </div>
                 <div>
-                    <Link className='basic-button' to='/parts/batteryForm'>Add Part</Link>
+                    <span className='green-note'>Batteries</span>
                     <PartsList list={batteries} partName={'battery'} />
+                    <Link className='basic-button' to='/parts/batteryForm'>Add Part</Link>
                 </div>
                 <div>
-                    <Link className='basic-button' to='/parts/controllerForm'>Add Part</Link>
+                    <span className='purple-note'>Controllers</span>
                     <PartsList list={controllers} partName={'controller'} />
+                    <Link className='basic-button' to='/parts/controllerForm'>Add Part</Link>
                 </div>
                 <div>
-                    <Link className='basic-button' to='/parts/MotorForm'>Add Part</Link>
+                    <span className='orange-note'>Motors</span>
                     <PartsList list={motors} partName={'motor'} />
+                    <Link className='basic-button' to='/parts/MotorForm'>Add Part</Link>
                 </div>
             </div>
         </main>
