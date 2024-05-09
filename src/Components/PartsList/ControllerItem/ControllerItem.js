@@ -1,8 +1,9 @@
 import React from 'react'
 import { deleteData } from '../../../Utils/main_functions'
 import { Link } from 'react-router-dom'
+import styles from '../Item.module.css'
 
-function ControllerItem({ item }) {
+function ControllerItem({ item, buttons }) {
 
     const deleteHandler = () => {
         deleteData('/controllers/' + item.id)
@@ -10,21 +11,16 @@ function ControllerItem({ item }) {
     }
 
     return (
-        <div>
+        <div className={styles.itemWrap}>
             <span>
-                {item.name}
+                {`${item.name} | ${item.voltage}V | ${item.power}W | ${item.weight}kg`}
+                {buttons && (
+                    <>
+                        <button onClick={deleteHandler} className='negative-button'>Delete</button>
+                        <Link className='basic-button' to={'/parts/controllerForm/' + item.id}>Edit</Link>
+                    </>
+                )}
             </span>
-            <span>
-                {item.voltage + 'V'}
-            </span>
-            <span>
-                {item.power + 'W'}
-            </span>
-            <span>
-                {item.weight + 'kg'}
-            </span>
-            <button onClick={deleteHandler} className='negative-button'>Delete</button>
-            <Link className='basic-button' to={'/parts/controllerForm/' + item.id}>Edit</Link>
         </div>
     )
 }

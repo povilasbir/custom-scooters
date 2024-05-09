@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { getData, postData, putData } from '../../../Utils/main_functions'
 import { useParams, useNavigate } from 'react-router-dom'
+import styles from '../Form.module.css';
+import Card from '../../../Components/Card/Card';
 
 function BatteryForm() {
 
@@ -27,7 +29,6 @@ function BatteryForm() {
             const opt = await getData('/types')
 
             setTypeOpt(opt)
-            console.log(opt[0].id)
         }
 
         const getBatteryData = async () => {
@@ -69,22 +70,35 @@ function BatteryForm() {
     }
 
     return (
-        <>
-            <form onSubmit={submitHandler}>
-                <input type='text' value={name} onChange={nameHandler}></input>
-                <select name='types' id='types' value={type} onChange={typeHandler}>
-                    {typeOpt.length > 0 ? (
-                        typeOpt.map(item => {
-                            return <option key={item.id} value={item.id}>{item.name}</option>
-                        })
-                    ) : 'Loading types...'}
-                </select>
-                <input type='number' value={voltage} onChange={voltageHandler}></input>
-                <input type='number' value={capacity} onChange={capacityHandler}></input>
-                <input type='number' value={weight} onChange={weightHandler}></input>
-                <button type='submit'>{id ? 'Submit Edit' : 'Add Part'}</button>
-            </form>
-        </>
+        <main>
+            <Card>
+                <form className={styles.orderForm} onSubmit={submitHandler}>
+
+                    <label htmlFor='name'>Part Name</label>
+                    <input id='name' name='name' type='text' value={name} onChange={nameHandler} required></input>
+
+                    <label htmlFor='types'>Battery Type</label>
+                    <select name='types' id='types' value={type} onChange={typeHandler} required>
+                        <option value={''}>-- Select Battery Type --</option>
+                        {typeOpt.length > 0 ? (
+                            typeOpt.map(item => {
+                                return <option key={item.id} value={item.id}>{item.name}</option>
+                            })
+                        ) : 'Loading types...'}
+                    </select>
+
+                    <label htmlFor='voltage'>Voltage</label>
+                    <input id='voltage' name='voltage' type='number' value={voltage} onChange={voltageHandler} required></input>
+
+                    <label htmlFor='capacity'>Capacity</label>
+                    <input id='capacity' name='capacity' type='number' value={capacity} onChange={capacityHandler} required></input>
+
+                    <label htmlFor='weight'>Weight</label>
+                    <input id='weight' name='weight' type='number' value={weight} onChange={weightHandler} required></input>
+                    <button type='submit'>{id ? 'Submit Edit' : 'Add Part'}</button>
+                </form>
+            </Card>
+        </main>
     )
 }
 

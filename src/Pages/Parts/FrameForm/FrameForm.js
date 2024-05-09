@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { getData, postData, putData } from '../../../Utils/main_functions'
 import { useParams, useNavigate } from 'react-router-dom'
+import Card from '../../../Components/Card/Card'
+import styles from '../Form.module.css';
 
 function FrameForm() {
 
@@ -49,14 +51,23 @@ function FrameForm() {
     }
 
     return (
-        <>
-            <form onSubmit={submitHandler}>
-                <input type='text' value={name} onChange={nameHandler}></input>
-                <input type='number' value={weight} onChange={weightHandler}></input>
-                <input type='text' value={img} onChange={imgHandler}></input>
-                <button type='submit'>{id ? 'Submit Edit' : 'Add Part'}</button>
-            </form>
-        </>
+        <main>
+            <Card>
+                <form className={styles.orderForm} onSubmit={submitHandler}>
+
+                    <label htmlFor='name'>Part Name</label>
+                    <input id='name' name='name' type='text' value={name} onChange={nameHandler} required></input>
+
+                    <label htmlFor='weight'>Part Weight</label>
+                    <input id='weight' name='weight' type='number' value={weight} onChange={weightHandler} required></input>
+
+                    <label htmlFor='img'>Image URL</label>
+                    <input id='img' name='img' type='text' value={img} onChange={imgHandler}></input>
+
+                    <button type='submit'>{id ? 'Submit Edit' : 'Add Part'}</button>
+                </form>
+            </Card>
+        </main>
     )
 }
 

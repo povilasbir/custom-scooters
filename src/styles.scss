@@ -14,6 +14,11 @@ html {
             max-width: 80%;
             margin: 0 auto;
 
+            .basic-column-flex {
+                display: flex;
+                flex-direction: column;
+            }
+
             .basic-button {
                 text-decoration: none;
                 text-align: center;
@@ -44,6 +49,42 @@ html {
             .negative-button:hover {
                 color: $active-red;
                 border-color: $active-red;
+            }
+
+            .red-note {
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0);
+                color: red;
+                border: 2px solid red;
+                padding: 10px 10px 10px 10px;
+                border-radius: 20px;
+            }
+
+            .green-note {
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0);
+                color: rgb(0, 255, 0);
+                border: 2px solid rgb(0, 255, 0);
+                padding: 10px 10px 10px 10px;
+                border-radius: 20px;
+            }
+
+            .purple-note {
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0);
+                color: rgb(174, 0, 255);
+                border: 2px solid rgb(174, 0, 255);
+                padding: 10px 10px 10px 10px;
+                border-radius: 20px;
+            }
+
+            .orange-note {
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0);
+                color: rgb(255, 123, 0);
+                border: 2px solid rgb(255, 123, 0);
+                padding: 10px 10px 10px 10px;
+                border-radius: 20px;
             }
         }
     }

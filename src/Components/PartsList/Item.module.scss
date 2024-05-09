@@ -1,0 +1,14 @@
+.itemWrap {
+    display: flex;
+
+    border: 1px solid cyan;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    span {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+}
